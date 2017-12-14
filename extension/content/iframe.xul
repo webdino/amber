@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE window>
+<window id="main-window"
+        width="800"
+        height="480"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<iframe src="http://compassionate-bhabha-5c279b.bitballoon.com/" flex="100%" type="content-primary" />
+</window>

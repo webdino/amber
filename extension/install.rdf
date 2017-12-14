@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$TerEF2"
+                   em:locale="ja"
+                   em:name="Amber"
+                   em:creator="Ryo Motozawa"
+                   em:description="GEM(Gecko Embedded)プロジェクトのための軽量htmlローダー"
+                   em:homepageURL="https://github.com/webdino/amber" />
+  <RDF:Description RDF:about="rdf:#$.erEF2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="45.*"
+                   em:maxVersion="56.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="amber@webdino.org"
+                   em:type="2"
+                   em:version="1.0"
+                   em:name="Amber"
+                   em:creator="Ryo Motozawa"
+                   em:developer="Ryo Motozawa"
+                   em:homepageURL="https://github.com/webdino/amber/"
+                   em:unpack="true"
+                   em:description="Light weight HTML loader for Project GEM (Gecko Embedded)"
+                   em:updateKey="MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDJJmfKyDHbKEKQRGSja7NK3JM/HqUz5RX5Afj2RmWBNnJt46/VwoERMsOcJfdpMjBn7aWJjXm04toqJ8pEcoRivEg6n/MRdEMflCA1plLMIoNFBouFRM9+DZrRYFPH3CLS2nz6eAOuS1Y/Rf6hx1/pi/iYmGGlglt8R1oqDmgAdQIDAQAB">
+    <em:localized RDF:resource="rdf:#$TerEF2"/>
+    <em:targetApplication RDF:resource="rdf:#$.erEF2"/>
+  </RDF:Description>
+</RDF:RDF>
