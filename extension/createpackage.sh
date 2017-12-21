@@ -1,10 +1,12 @@
 #!/bin/sh
 
-if [ -e amber.xpi ]; then
-    rm -f amber.xpi
+XPI=../docs/amber.xpi
+
+if [ -e $XPI ]; then
+    rm -f $XPI
 fi
 
-zip -r amber.xpi \
+zip -r $XPI \
     content/* \
     install.rdf \
     chrome.manifest
