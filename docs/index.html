@@ -1,22 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>Project Amber: Light weight HTML Loade for Project Gecko Embedded</title>
 <style>
-  body, input {
+  body, input, button {
     font-size: 2rem;
   }
 </style>
 </head>
 <body>
-  <script>
-    function go() {
-        var url = document.getElementById(`url`).value;
-        url = url.match(/^https?:/) ? url : "http://"+url;
-        window.location = url;
-    }
-  </script>
   <form onsubmit="go(); return false">
     URL: <input id=url>
   </form>
+  <button id=fullscreen>FullScreen</button>
+  <script>
+    function go() {
+        var url = document.getElementById('url').value;
+        url = url.match(/^https?:/) ? url : "http://"+url;
+        window.location = url;
+    }
+    var button = document.getElementById('fullscreen');
+    button.addEventListener("click", function(e) {
+      document.body.mozRequestFullScreen();
+    });
+  </script>
 </body>
 </html>
